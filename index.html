@@ -2,30 +2,30 @@
 <html lang="pt-br">
     <head>
         <title>Boutique dos Bichos</title>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
-        <header>
+        <header class="topo">
+            <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" class="logo"/></a>
             <nav class="navbar navbar-expand-sm menu navbar-dark">
-                <a class="navbar-brand" href="index.html">Logo</a>
                 <ul class="group-menu">
                     <li><a class="navbar-brand" href="index.html">Home</a>
-                    <li><a class="navbar-brand" href="quem-somos.html">Quem Somos</a>
+                    <li><a class="navbar-brand" href="quem-somos.html">Quem somos</a>
                     <li><a class="navbar-brand" href="servicos.html">Serviços</a>
                     <li><a class="navbar-brand" href="produtos.html">Produtos</a>
                     <li><a class="navbar-brand" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
-        
+
         <section class="objetivosPag col-md-12">
-            <img class="img-pag" src="imagens/exemple.jpg" alt="Imagem sobre a página">
+            <img class="img-pag" src="imagens/imagem_home.jpg" alt="Imagem sobre a página">
             <div class="texto-pag">
                 <h1 class="titulo">Objetivos da pagina</h1>
                 <p class="">
@@ -37,57 +37,79 @@
         </section>
 
         <section class="col-md-12 servicos">
-            <h1 class="titulo text-center">Nossos servicos</h1>
-            <div class="row">
-                <section class="offset-1 col-md-2 servico">
-                    <a href="servicos.html#tosas">
-                        <div class="icon">
-                            <i class="fa fa-bath fa-4x" aria-hidden="true"></i>
-                        </div>
-                        <h2 class="subtitulo text-center">Tosa</h2>
-                    </a>
-                </section>
-                <section class="col-md-2 servico">
-                    <a href="servicos.html#vet">
-                        <div class="icon">
-                            <i class="fa fa-plus-square fa-4x" aria-hidden="true"></i>
-                        </div>
-                        <h2 class="subtitulo text-center">Veterianario</h2>
-                    </a>
-                </section>
-                <section class="col-md-2 servico">
-                    <a href="servicos.html#hotel">
-                        <div class="icon">
-                            <i class="fa fa-building fa-4x" aria-hidden="true"></i>
-                        </div>
-                        <h2 class="subtitulo text-center">Hotel</h2>
-                    </a>
-                </section>
-                <section class="col-md-2 servico">
-                    <a href="servicos.html#taxi">
-                        <div class="icon">
-                            <i class="fa fa-taxi fa-4x" aria-hidden="true"></i>
-                        </div>
-                        <h2 class="subtitulo text-center">Taxi Dog</h2>
-                    </a>
-                </section>
-                <section class="col-md-2 servico">
-                    <a href="servicos.html#daycare">
-                        <div class="icon">
-                            <i class="fa fa-heart fa-4x" aria-hidden="true"></i>
-                        </div>
-                        <h2 class="subtitulo text-center">Day Care</h2>
-                    </a>
-                </section>
+            <div class="container">
+                <h1 class="titulo text-center">Nossos servicos</h1>
+                <div class="row">
+                    <section class="offset-1 col-md-2 servico">
+                        <a href="servicos.html#tosas">
+                            <div class="icon">
+                                <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="subtitulo text-center">Tosa</h2>
+                        </a>
+                    </section>
+                    <section class="col-md-2 servico">
+                        <a href="servicos.html#vet">
+                            <div class="icon">
+                                <i class="fa fa-plus-square fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="subtitulo text-center">Veterianario</h2>
+                        </a>
+                    </section>
+                    <section class="col-md-2 servico">
+                        <a href="servicos.html#hotel">
+                            <div class="icon">
+                                <i class="fa fa-building fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="subtitulo text-center">Hotel</h2>
+                        </a>
+                    </section>
+                    <section class="col-md-2 servico">
+                        <a href="servicos.html#taxi">
+                            <div class="icon">
+                                <i class="fa fa-taxi fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="subtitulo text-center">Taxi Dog</h2>
+                        </a>
+                    </section>
+                    <section class="col-md-2 servico">
+                        <a href="servicos.html#daycare">
+                            <div class="icon">
+                                <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="subtitulo text-center">Day Care</h2>
+                        </a>
+                    </section>
+                </div>
             </div>
         </section>
-        
-        <footer>
-            <address class="container">
-                <ul>
-                    
-                </ul>
-            </address>
+
+        <footer class="rodape">
+            <div class="filter">
+                <address class="container">
+                    <ul>
+                        <li>
+                            <a class="linkrodape" href="mailto:boutique_dos_bichos@hotmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                contato@boutiquebichos.com
+                            </a>
+                        </li>
+                        <li>
+                            <a class="linkrodape" href="tel:xxxxxxxxxxx">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                (xx) xxxxx-xxxx
+                            </a>
+                        </li>
+                        <li>
+                            <a class="linkrodape" href="https://www.google.ca/maps/place/Av.+Jo%C3%A3o+Paulo+Ablas,+5000+-+Jardim+da+Gloria,+Cotia+-+SP,+06711-250/@-23.6236797,-46.835877,17z/data=!3m1!4b1!4m5!3m4!1s0x94cfab2f6d72213d:0x26cfc99ffed93132!8m2!3d-23.6236846!4d-46.8336883">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Avenida João Paulo Ablas, 5000
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+                <small>Todos os direitos autorais reservados a Boutique dos Bichos</small>
+            </div>
         </footer>
 
         <script src="js/jquery.min.js"></script>

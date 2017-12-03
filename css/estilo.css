@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family= Lora | Open + Sans '); 
+
 * {
     margin:0;
     padding:0;
@@ -6,6 +8,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    min-height: 100%;
 }
 
 html {
@@ -16,11 +19,12 @@ html {
 }
 
 body {
+    font-family: 'Lora', 'times new roman', serif;
     overflow-y:scroll;
 }
 
 .titulo, .subtitulo {
-    font-family: arial, verdana, sans-serif ;
+    font-family: 'Open Sans', arial, verdana, sans-serif;
     font-weight: 600;
     line-height: 1.5;
 }
@@ -46,6 +50,84 @@ a:hover {
     text-decoration: none;
 }
 
+.divisao {
+    border: 1px solid #003d1a;
+}
+
+.margin20 {
+    margin-top: 20px;
+}
+
+.topo, .rodape {
+    height: 231px;
+    background-image: url(../imagens/topo.png);
+    background-color: #aaa939;
+    background-position: -40px 0px;
+}
+
+.menu {
+    background-color: hsla(59, 50%, 45%, 0.85);
+    position: relative;
+    top: 1px;
+    padding: 3px 0;
+}
+
+.menu .group-menu li {
+    float: left;
+}
+.menu .group-menu {
+    list-style: none;
+    margin: 0 auto;
+}
+.menu a.navbar-brand, .rodape a.linkrodape {
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    color: #FFF;
+    font-weight: 600;
+    padding: 3px 25px;
+}
+.menu a.navbar-brand:hover, .rodape a.linkrodape:hover {
+    color: #553100;
+}
+
+.topo > a:first-of-type {
+    padding-bottom: 0;
+    margin-left: 40px;
+    padding-top: 0px;
+}
+
+.rodape {
+    height: auto;
+    text-align: center;
+    color: #FFF;
+    font-size: 1em;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear:both;
+}
+
+.rodape .filter {
+    background-color: hsla(59, 50%, 45%, 0.85);
+    padding: 20px 0;
+}
+
+.rodape  ul {
+    list-style: none;
+}
+
+.rodape  ul li {
+    display: inline-block;
+}
+
+.rodape address, .rodape address ul {
+    margin-bottom: 4px; 
+}
+
+.rodape  small {
+    clear: both;
+}
+
 .servicos {
     padding: 30px 0;
 }
@@ -62,18 +144,23 @@ a:hover {
     margin: 0 auto;
 }
 
-.servico .subtitulo {
+.servico > .subtitulo {
     margin-top: 15px;
     color: #553100;
 }
 
-.servico a:hover {
+.servico a:hover  h2 {
     text-decoration: none;
+    color: #0f5b30;
+}
+.servico a:hover .icon {
+    background-color: #0f5b30;
 }
 
 .objetivosPag {
     display: flex;
     align-items: center;
+    padding-left: 0;
 }
 
 .objetivosPag .texto-pag {
@@ -90,23 +177,22 @@ a:hover {
     clear: both;
 }
 
-body > section:nth-of-type(2n) {
-    background-color: hsla(147, 29%, 59%, 0.52);
+.lista {
+    text-align: center;
+    padding: 1%;
+    box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.25);
 }
 
-.menu {
-    background-color: #aaa939;
+.sumario {
+    position: fixed;
 }
 
-.menu .group-menu li {
-    float: left;
-}
-.menu .group-menu {
+.sumario ul {
     list-style: none;
-    margin: 0 auto;
 }
-.menu a.navbar-brand {
-    color: #553100;
-    font-weight: 600;
-    padding: 3px 10px;
+
+.pagServico .iconPet {
+    margin-left: auto; 
+    margin-right: auto; 
+    color: #003d1a;
 }
