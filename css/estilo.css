@@ -213,3 +213,20 @@ a:hover {
     border-color: #28794c;
     box-shadow: 0 0 0 0.2rem hsla(147, 50%, 32%, 0.25);
 }
+
+.produto {
+    height: 290px;
+    box-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.5);
+}
+
+.img-produto {
+    max-height: 199px;
+}
+
+.produto .ProTamImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 199px;
+    margin-bottom: 10px;
+}
